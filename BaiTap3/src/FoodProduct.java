@@ -18,7 +18,7 @@ public class FoodProduct extends Product {
     public String getInfo(){
         return super.getInfo() + "Hạn dùng còn" + expiryDays +"ngày.";
     }
-    public double calculateDiscountPrice(){
+    public double calculateDiscountedPrice(){
         if (expiryDays <  3){
             return getPrice() *0.7;
         } else if (expiryDays <=7) {
@@ -27,3 +27,4 @@ public class FoodProduct extends Product {
         return getPrice();
     }
 }
+
