@@ -17,7 +17,8 @@ public class ClothingProduct extends Product {
         return super.getInfo() + "Sản phẩm có size:" +size;
     }
 
-    public double calculateDiscountPrice(){
+    public double calculateDiscountedPrice(){
         return getPrice() * 0.85;
     }
 }
+
