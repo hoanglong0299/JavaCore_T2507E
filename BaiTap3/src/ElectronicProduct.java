@@ -17,10 +17,11 @@ public class ElectronicProduct extends Product {
         return super.getInfo()+ "Bảo hành "+ warrantyMonths +"tháng.";
     }
 
-    public double calculateDiscountPrice(){
+    public double calculateDiscountedPrice(){
         if(getPrice() > 10_000_000){
             return getPrice() *0.9;
         }
         return getPrice();
     }
 }
+
